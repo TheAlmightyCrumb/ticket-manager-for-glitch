@@ -1,0 +1,204 @@
+body {
+  font-family: "Nunito", sans-serif;
+  background:#c0d5de
+}
+
+:root {
+  --mainGray: #535155;
+  --mainDark: #1c1c1c;
+}
+
+#app-top {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  background: linear-gradient(
+    90deg,
+    rgba(49, 165, 224, 1) 50%,
+    rgba(28, 28, 28, 1) 80%
+  );
+  width: 100%;
+}
+
+.top-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 25px;
+}
+
+h1 {
+  font-size: 25px;
+  margin-left: 10px;
+  color: white;
+}
+
+#emoji {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.link:hover {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+  margin-right: 25px;
+}
+
+#header {
+  display: flex;
+  flex-flow: row wrap;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  /* background-color: maroon; */
+  background: linear-gradient(
+    90deg,
+    rgba(49, 165, 224, 1) 50%,
+    rgba(28, 28, 28, 1) 80%
+  );
+  /* padding: 10px; */
+  justify-content: space-between;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+#searchInput {
+  width: 50%;
+  padding: 10px;
+}
+
+#hidden-section {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+}
+
+#hideTicketsCounter {
+  order: 1;
+  margin-right: 25px;
+  margin-left: 10px;
+}
+
+#restoreHideTickets {
+  order: 2;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+#restoreHideTickets:hover {
+  background-color: white;
+  color: #31a5e0;
+  cursor: pointer;
+  border-radius: 45px;
+}
+
+#tickets-section {
+  /* margin-top: 100px; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  /* background:rgba(28,28,28,0.2); */
+  background:#c0d5de
+}
+
+.ticket {
+  flex-flow: row wrap;
+  margin: 25px;
+  width: 500px;
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 10px 10px 10px 2px gray;
+  /* background:rgba(28,28,28,0.1); */
+  background: #c9e4ff;
+}
+
+.ticket-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 20px;
+  max-width: 450px;
+  margin: 0 0 10px 0;
+}
+
+.hideTicketButton {
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.hideTicketButton:hover {
+  cursor: pointer;
+  color: #31a5e0;
+  text-decoration: underline;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 15px;
+  color: var(--mainGray);
+}
+
+.show-more {
+  font-weight: bold;
+  width: 100px;
+}
+
+.show-more:hover {
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: underline;
+  width: 100px;
+}
+
+.ticket-bottom {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 0;
+}
+
+.writer-details {
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--mainGray);
+}
+
+.label-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: bold;
+  min-width: 45px;
+  max-width: 75px;
+  margin: 0 5px;
+  padding: 5px 10px;
+  color: white;
+  text-align: center;
+  background: #31a5e0;
+  border: 2px solid #17658c;
+  border-radius: 50px;
+}
